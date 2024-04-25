@@ -42,22 +42,9 @@ const Dice = styled.button`
   transform: translateY(50%);
   border: none;
   transition: 0.3s all ease-in;
-  position: relative;
 
   &:hover {
     cursor: ${({ disabled }) => (!disabled ? "pointer" : "not-allowed")};
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 6rem; /* Slightly larger than base element */
-    height: 6rem;
-    background-color: var(--neon-green);
-    border-radius: 50%;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* More precise centering */
-    z-index: -1;
   }
 `;
 
